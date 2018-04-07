@@ -1,0 +1,332 @@
+body{
+    margin: 0;
+    padding: 0;
+    background:url("images\\bg_sport.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+}
+.loginBox{
+    border-radius: 15px;
+    position: absolute;
+    padding: 80px 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 460px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.534);
+}
+.signupBox{
+    border-radius: 15px;
+    position: absolute;
+    padding: 80px 40px;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 580px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.534);
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left:calc(50% - 50px);
+}
+.welcome{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left:calc(50% - 50px);
+}
+.valid{
+    height: 45px;
+    font-size: 15px;
+    color: rgb(238, 255, 2);
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+.signupBox h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color: rgb(253, 253, 253);
+}
+.loginBox h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color: rgb(253, 253, 253);
+}
+.loginBox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+.signupBox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+.loginBox input{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.signupBox input{
+    width: 100%;
+}
+.loginBox input[type="text"],
+.loginBox input[type="password"]{
+    border: none;
+    border-bottom: 1px solid rgb(4, 255, 234);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+.signupBox input[type="text"],
+.signupBox input[type="password"]{
+    border: none;
+    border-bottom: 1px solid rgb(4, 255, 234);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+::placeholder{
+    color: rgba(255, 255, 255, .5);
+}
+.loginBox input[type="submit"]{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    background: rgb(1, 1, 94);
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+.signupBox input[type="submit"]{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    background: rgb(1, 1, 94);
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+.loginBox input[type="submit"]:hover{
+    background: white;
+    color: rgba(4, 4, 160, 0.87);
+    font-weight: bold;
+}
+.signupBox input[type="submit"]:hover{
+    background: white;
+    color: rgba(4, 4, 160, 0.87);
+    font-weight: bold;
+}
+.loginBox a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.outdiv{
+    /*border: 2px solid black;*/
+    position: absolute;
+    top: 0px;
+    left: 150px;
+    width: 1080px;
+    height: 100%px;
+    background-color: white;
+    overflow: auto;
+    text-decoration: none;
+
+}
+.outdiv div[name="head"]{
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+.outdiv ul[name="artical"]{
+    text-align: center;
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: 35px;
+    font-size: 16px; 
+    height: 100px;
+    width: 100%;
+    background-image: none;
+}
+.outdiv li[name="view"]{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    width: 250px;
+    border: 1px solid black;
+}
+.outdiv ul{
+    list-style-type: none;
+    text-align  : center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: bold;
+    background-image: url("images\\NavigationBar.jpg");
+}
+.outdiv div[name="head"] img{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 8px 0px;    
+    height: 120px;
+}
+.outdiv div[name="menu"] img{
+    padding: 0px 0px 0px 0px;
+    margin: -12px 0px -10px 0px;
+    width: 40px;
+    height: 40px;
+}
+.outdiv li{
+    float: left;
+    text-align: center;
+    display: block;
+    padding-top: 1px;
+}
+.outdiv div[name="menu"] input[name="search"]{
+    width: 100%;
+    margin: 10px 10px 0px 0px; 
+    border: none;
+    border-bottom: 1px solid rgb(59, 224, 4);
+    background: transparent;
+    outline: none;
+    color: white;
+}
+.outdiv li[name="searchbar"]{
+    float: right;
+    width: 150px;
+    margin-right: 10px;
+    margin-left: 8px;
+}
+.outdiv li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.outdiv li a:hover {
+    display: block;
+    color: rgb(42, 190, 4);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-shadow:1px 0px rgb(7, 1, 1);
+    -webkit-transform : scale(1.03);
+}
+.article h1{
+    font-size:30px;
+    font-family:Courier New, Courier, monospace;
+    font-style:oblique;
+}
+.article h3{
+    color: grey;
+    font-size: 12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.articleImage{
+    width: 1080px;
+    text-align: center;
+}
+.post{
+    padding:0px 10px 0px 10px;
+    text-align: left;
+    font-size:16px;
+    color: black ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.editform{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 500px;
+    margin:50px 0px 15px 250px; 
+    padding: 15px 15px 15px 15px;
+}
+.menuform{
+    background-color: #283747;
+    color: white;
+    height: 40px;
+    margin-bottom: 0px;
+}
+.menuform input[type="submit"]{
+    height: 40px;
+    background-color: #283747;
+    color: white;
+    border: none;
+}
+.menuform input[type="submit"]:hover{
+    height: 40px;
+    background-color:pink;
+    color: rgb(29, 18, 59);
+}
+.menuform input[type="submit"]:active{
+    height: 40px;
+    background-color: gray;
+    color: #283747;
+}
+.homebody{
+    background-color: #3b5166;
+    text-align: left;
+
+}
+.bottomborder{
+    border-bottom: 1px;
+    border-bottom-color: #283747;
+    font-style: oblique;
+   /* width: 100%;*/
+}
+.des h2{
+    color: aliceblue;
+}
+.des{
+    width:868px;
+    color: red;
+}
+.des p{
+    width: 868px;
+    color:aquamarine;
+}
+.homebody td{
+    direction: ltr;
+    text-align: left;
+    vertical-align: top;
+}
+.homebody tr{
+
+    text-align-last: left;
+}
+.homebody a{
+    color: yellow;
+}
+.admindiv{
+background-color: black;
+color: bisque;
+font-family: cursive;
+/*vertical-align: bottom;*/
+}
